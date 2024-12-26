@@ -135,7 +135,7 @@
     description = "Steven";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
+    thunderbird
     ];
   };
 
