@@ -9,7 +9,8 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       # ./kde.nix
-      ./hyprlandmodule.nix
+      # ./hyprlandmodule.nix
+      ./hyprland.nix
     ];
 
   # Bootloader.
@@ -170,6 +171,7 @@
     xarchiver
     resources
     # kdePackages.kate
+    stremio
   ];
 
   fonts.packages = with pkgs; [
