@@ -8,9 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # ./kde.nix
+      ./kde.nix
       # ./hyprlandmodule.nix
-      ./hyprland.nix
     ];
 
   # Bootloader.
@@ -173,6 +172,9 @@
     # kdePackages.kate
     stremio
   ];
+
+  # Enable flatpaks
+  services.flatpak.enable = true;
 
   fonts.packages = with pkgs; [
     nerdfonts
