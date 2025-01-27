@@ -171,6 +171,9 @@
     resources
     # kdePackages.kate
     stremio
+    wineWow64Packages.stagingFull
+    protontricks
+    htop
   ];
 
   # Enable flatpaks
