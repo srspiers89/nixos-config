@@ -174,6 +174,7 @@
     wineWow64Packages.stagingFull
     protontricks
     htop
+    unar
   ];
 
   # Enable flatpaks
