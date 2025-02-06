@@ -175,6 +175,7 @@
     protontricks
     htop
     unar
+    gimp
   ];
 
   # Enable flatpaks
