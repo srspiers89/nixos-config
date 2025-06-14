@@ -157,17 +157,11 @@
     gamemode
     gamescope
     heroic
-    obsidian
     mangohud
     logiops
     neofetch
-    quickemu
-    spice-gtk
-    phodav
     path-of-building
-    # samba4Full
     # nvidia-vaapi-driver
-    xarchiver
     resources
     # kdePackages.kate
     stremio
@@ -181,8 +175,9 @@
   # Enable flatpaks
   services.flatpak.enable = true;
 
-  fonts.packages = with pkgs; [
-    nerdfonts
+  #fonts.packages = with pkgs; [
+  #  nerdfonts
+
   ];
 
   # Optional, hint electron apps to use wayland:
@@ -197,22 +192,6 @@
   # };
 
   # List services that you want to enable:
-
-  services.spice-webdavd = {
-    enable = true;
-    package = pkgs.phodav;
-  };
-
-  services.samba = {
-    enable = true;
-    securityType = "user";
-    openFirewall = true;
-  };
-
-  services.samba-wsdd = {
-    enable = true;
-    openFirewall = true;
-  };
 
   networking.firewall.enable = true;
   networking.firewall.allowPing = true;
