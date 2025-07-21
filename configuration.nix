@@ -8,8 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./kde.nix
-      # ./hyprlandmodule.nix
+      # ./kde.nix
+      ./hyprlandmodule.nix
     ];
 
   # Bootloader.
@@ -170,14 +170,20 @@
     htop
     unar
     gimp
+    jq
+    # copyq
+    # clipman
+    wtype
+    cliphist
   ];
 
   # Enable flatpaks
   services.flatpak.enable = true;
 
-  #fonts.packages = with pkgs; [
-  #  nerdfonts
-
+  #fonts.packages = [ ... ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+  fonts.packages = with pkgs; [
+    # nerdfonts
+    nerd-fonts.jetbrains-mono
   ];
 
   # Optional, hint electron apps to use wayland:

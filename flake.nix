@@ -7,6 +7,9 @@
     # home-manager.url = "github:nix-community/home-manager/release-24.11";
     # home-manager.inputs.nixpkgs.follows = "nixpkgs";
     hyprland.url = "github:hyprwm/Hyprland";
+    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
+
+    hyprsession.url = "github:tiecia/hyprsession";
   };
 
   outputs = { self, nixpkgs, ... } @ inputs: {
